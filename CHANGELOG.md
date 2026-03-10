@@ -1,3 +1,19 @@
+## [1.11.6](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/compare/1.11.5...1.11.6) (2026-03-10)
+
+### Dependency updates
+
+* **deps:** update alchemist to v43.0.13 ([a7bf817](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/commit/a7bf817c92ddedbf3f3ea1a27bdf050a5adfa093))
+* **deps:** update alchemist to v43.0.14 ([c8e1161](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/commit/c8e1161512bf1730f9c537445584c7cb50ba6edb))
+* **deps:** update gradle to v9 ([f232d96](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/commit/f232d96537b09c93a20a0b3fda82d85be84e5330))
+
+### Bug Fixes
+
+* **build:** remove gradle deprecated java functions ([c28868e](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/commit/c28868e2a5444af6080847f31a76b8f1b4153b53))
+
+### General maintenance
+
+* **release:** update gradle.properties .env versions to 1.11.5 [skip ci] ([d5458ad](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/commit/d5458ad9deae2005feff24ca721faaf84a19c615))
+
 ## [1.11.5](https://github.com/angelacorte/experiments-2025-self-stabilizing-gossip/compare/1.11.4...1.11.5) (2026-03-08)
 
 ### Dependency updates
