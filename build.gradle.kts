@@ -46,15 +46,17 @@ dependencies {
 val maxHeap: Long? by project
 val heap: Long =
     maxHeap ?: if (System.getProperty("os.name").lowercase().contains("linux")) {
-        ByteArrayOutputStream()
-            .use { output ->
-                exec {
-                    executable = "bash"
-                    args = listOf("-c", "cat /proc/meminfo | grep MemAvailable | grep -o '[0-9]*'")
-                    standardOutput = output
-                }
-                output.toString().trim().toLong() / 1024
-            }.also { println("Detected ${it}MB RAM available.") } * 9 / 10
+        val memAvailableKb = providers
+            .exec {
+                commandLine("bash", "-c", "cat /proc/meminfo | grep MemAvailable | grep -o '[0-9]*'")
+            }
+            .standardOutput
+            .asText
+            .map { it.trim().toLong() }
+            .get()
+
+        (memAvailableKb / 1024)
+            .also { println("Detected ${it}MB RAM available.") } * 9 / 10
     } else {
         // Guess 16GB RAM of which 2 used by the OS
         14 * 1024L
