@@ -68,7 +68,7 @@ jobs:
       - check-simulations-native
       # - check-simulations-docker
       # - create-charts
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
       issues: write
@@ -111,7 +111,7 @@ jobs:
           npm install
           npx semantic-release
   success:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     needs:
       # - create-charts
       - check-simulations-native
