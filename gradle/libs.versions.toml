@@ -12,7 +12,7 @@ collektive = { module = "it.unibo.collektive:collektive-dsl", version.ref = "col
 collektive-incarnation = { module = "it.unibo.collektive:alchemist-incarnation-collektive", version.ref = "collektive" }
 collektive-stdlib = { module = "it.unibo.collektive:collektive-stdlib", version.ref = "collektive" }
 kotlin-time = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.8.0-0.6.x-compat"}
-kryo = { module = "com.esotericsoftware:kryo", version = "5.7.0" }
+kryo = { module = "com.esotericsoftware:kryo", version = "5.7.1" }
 
 [bundles]
 alchemist = ["alchemist", "alchemist-euclidean-geometry", "alchemist-incarnation-protelis", "alchemist-swingui"]
