@@ -1,4 +1,4 @@
-FROM eclipse-temurin:22
+FROM eclipse-temurin:24
 RUN mkdir -p /experiment
 WORKDIR /experiment
 ENV GRADLE_TASK=runAllBatch
